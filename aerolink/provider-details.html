@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provider Details - Aero Link</title>
+    <link rel="stylesheet" href="css/provider-details.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <img src="images/logo.png" alt="Aero Link Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li id="bookings-link" style="display: none;"><a href="bookings.html">Bookings</a></li>
+                    <li id="profile-link" style="display: none;"><a href="profile.html">Profile</a></li>
+                    <li id="logout-link" style="display: none;"><a href="index.html">Logout</a></li>
+                    <li id="login-link"><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="details-container" id="provider-details">
+            <h1 id="provider-name">Loading...</h1>
+            <div class="details-content">
+                <p><strong>Speed:</strong> <span id="provider-speed"></span></p>
+                <p><strong>Rating:</strong> <span id="provider-rating"></span> ⭐</p>
+                <p><strong>Price:</strong> ₹<span id="provider-price"></span>/month</p>
+                <p id="provider-description"></p>
+                <button class="btn-primary" id="book-btn">Book Now</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Aero Link. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+
+    <script src="js/provider-details.js"></script>
+</body>
+
+</html>

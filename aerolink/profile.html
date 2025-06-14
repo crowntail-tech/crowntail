@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Aero Link</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <a href="index.html">
+                <img src="images/logo.webp" alt="Aero Link Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                    <li><a href="profile.html" class="active">Profile</a></li>
+                    <li><a href="javascript:void(0);" id="logout-link">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="profile-container">
+            <h1>Your Profile</h1>
+
+            <!-- Profile Picture Upload -->
+            <div class="profile-picture">
+                <img src="images/default-profile.png" id="profile-pic" alt="Profile Picture">
+                <input type="file" id="profile-upload" accept="image/*" disabled>
+                <label for="profile-upload" class="upload-btn">Upload Picture</label>
+            </div>
+
+            <!-- Edit Button -->
+            <button id="edit-btn" class="btn-primary">Edit Profile</button>
+
+            <form id="profile-form">
+                <!-- Personal Details -->
+                <div class="form-section">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" readonly>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" readonly>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" readonly>
+
+                </div>
+
+                <!-- Address Section -->
+                <div class="form-section">
+                    <label for="street">Street</label>
+                    <input type="text" id="street" name="street" readonly>
+
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" readonly>
+
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" readonly>
+
+                    <label for="zip">ZIP Code</label>
+                    <input type="text" id="zip" name="zip" readonly>
+                </div>
+
+                <!-- Save and Cancel Buttons -->
+                <button type="submit" class="btn-primary" id="save-btn" style="display: none;">Save</button>
+                <button type="button" class="btn-cancel" id="cancel-btn" style="display: none;">Cancel</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Aero Link. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+
+    <script type="module" src="js/profile.js"></script>
+</body>
+
+</html>

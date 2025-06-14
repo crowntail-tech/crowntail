@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings - Aero Link</title>
+    <link rel="stylesheet" href="css/bookings.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <a href="index.html">
+                <img src="images/logo.webp" alt="Aero Link Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="bookings.html" class="active">Bookings</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="javascript:void(0);" id="logout-link">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container" id="bookings-container">
+            <h1 id="bookings-title">Loading Your Bookings...</h1>
+
+            <!-- Filter Options -->
+            <div class="filter">
+                <label for="filter-status">Filter by Status:</label>
+                <select id="filter-status">
+                    <option value="all">All</option>
+                    <option value="active">Active</option>
+                    <option value="completed">Completed</option>
+                    <option value="cancelled">Cancelled</option>
+                </select>
+            </div>
+
+            <section id="bookings-section" style="display: none;">
+                <h2>Your Bookings</h2>
+                <div id="bookings-list" class="cards">
+                    <!-- Bookings will load dynamically -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Aero Link. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+
+    <!-- Script -->
+    <script type="module" src="js/bookings.js"></script>
+</body>
+
+</html>
