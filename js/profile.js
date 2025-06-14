@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fetch and load profile data
     const fetchProfileData = async () => {
-        const response = await fetch('http://127.0.0.1:8000/user/profile', {
+        const response = await fetch('https://aerolink-backend-2b4e.onrender.com/user/profile', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const formData = new FormData();
             formData.append('file', profileUpload.files[0]);
 
-            const uploadResponse = await fetch('http://127.0.0.1:8000/user/upload-profile-picture', {
+            const uploadResponse = await fetch('https://aerolink-backend-2b4e.onrender.com/user/upload-profile-picture', {
                 method: 'PUT',
                 headers: {
                     'Authorization': `Bearer ${token}`
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        const response = await fetch('http://127.0.0.1:8000/user/profile/update', {
+        const response = await fetch('https://aerolink-backend-2b4e.onrender.com/user/profile/update', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

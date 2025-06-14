@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch and load providers dynamically
     const fetchProviders = async () => {
         try {
-            const response = await fetch('http://127.0.0.1:8000/user/providers', {  // Correct API endpoint
+            const response = await fetch('https://aerolink-backend-2b4e.onrender.com/user/providers', {  // Correct API endpoint
                 method: 'GET'
             });
 

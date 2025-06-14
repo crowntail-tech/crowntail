@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch and display bookings
     const fetchBookings = async () => {
         try {
-            const response = await fetch('http://127.0.0.1:8000/user/bookings', {
+            const response = await fetch('https://aerolink-backend-2b4e.onrender.com/user/bookings', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${token}`

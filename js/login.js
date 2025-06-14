@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // Call API
-            const response = await fetch('http://127.0.0.1:8000/auth/login', {
+            const response = await fetch('https://aerolink-backend-2b4e.onrender.com/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
