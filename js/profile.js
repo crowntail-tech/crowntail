@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = await response.json();
             inputs.forEach(input => input.value = data[input.name] || '');
             // Set profile picture if available
-            document.getElementById('profile-pic').src = `http://localhost:8000/user${data.profile_picture}` || 'images/default-profile.png';
+            document.getElementById('profile-pic').src = `https://aerolink-backend-2b4e.onrender.com/user${data.profile_picture}` || 'images/default-profile.png';
         } else {
             alert('Failed to fetch profile data.');
         }
